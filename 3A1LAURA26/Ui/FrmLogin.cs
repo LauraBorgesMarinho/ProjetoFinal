@@ -26,7 +26,7 @@ namespace _3A1LAURA26
         private void btnLogar_Click(object sender, EventArgs e)
         {
             atributos.Email = txtEmail.Text; // atribuição dos valores
-            atributos.Cpf = int.Parse(txtCPF.Text);
+            atributos.Cpf = txtCPF.Text;
             atributos.Senha = txtSenha.Text;
 
             if (metodos.Logar(atributos) == true) // envio dos dados para o método de Logar

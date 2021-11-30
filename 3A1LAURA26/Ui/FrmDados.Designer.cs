@@ -32,7 +32,7 @@
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
-            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.lblId = new System.Windows.Forms.Label();
             this.txtLBM = new System.Windows.Forms.TextBox();
             this.lblLBM = new System.Windows.Forms.Label();
@@ -52,6 +52,7 @@
             this.dgvListar.Name = "dgvListar";
             this.dgvListar.Size = new System.Drawing.Size(389, 160);
             this.dgvListar.TabIndex = 33;
+            this.dgvListar.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListar_CellClick);
             // 
             // btnExcluir
             // 
@@ -62,6 +63,7 @@
             this.btnExcluir.TabIndex = 32;
             this.btnExcluir.Text = "EXCLUIR";
             this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnAlterar
             // 
@@ -72,6 +74,7 @@
             this.btnAlterar.TabIndex = 31;
             this.btnAlterar.Text = "ALTERAR";
             this.btnAlterar.UseVisualStyleBackColor = false;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnCadastrar
             // 
@@ -82,13 +85,14 @@
             this.btnCadastrar.TabIndex = 30;
             this.btnCadastrar.Text = "CADASTRAR";
             this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
-            // txtEstado
+            // txtId
             // 
-            this.txtEstado.Location = new System.Drawing.Point(94, 41);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(76, 20);
-            this.txtEstado.TabIndex = 35;
+            this.txtId.Location = new System.Drawing.Point(94, 41);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(76, 20);
+            this.txtId.TabIndex = 35;
             // 
             // lblId
             // 
@@ -171,7 +175,7 @@
             this.Controls.Add(this.lblL5);
             this.Controls.Add(this.txtLBM);
             this.Controls.Add(this.lblLBM);
-            this.Controls.Add(this.txtEstado);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.dgvListar);
             this.Controls.Add(this.btnExcluir);
@@ -192,7 +196,7 @@
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.Button btnCadastrar;
-        private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.TextBox txtLBM;
         private System.Windows.Forms.Label lblLBM;

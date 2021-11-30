@@ -61,6 +61,7 @@
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(132, 20);
             this.txtCPF.TabIndex = 1;
+            this.txtCPF.Text = "99999999999";
             // 
             // txtEmail
             // 
@@ -128,6 +129,7 @@
             this.btnCadastrar.TabIndex = 26;
             this.btnCadastrar.Text = "CADASTRAR";
             this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // btnAlterar
             // 
@@ -138,6 +140,7 @@
             this.btnAlterar.TabIndex = 27;
             this.btnAlterar.Text = "ALTERAR";
             this.btnAlterar.UseVisualStyleBackColor = false;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnExcluir
             // 
@@ -148,6 +151,7 @@
             this.btnExcluir.TabIndex = 28;
             this.btnExcluir.Text = "EXCLUIR";
             this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // dgvListar
             // 
@@ -157,6 +161,7 @@
             this.dgvListar.Name = "dgvListar";
             this.dgvListar.Size = new System.Drawing.Size(570, 213);
             this.dgvListar.TabIndex = 29;
+            this.dgvListar.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListar_CellClick);
             // 
             // txtTelefone
             // 
