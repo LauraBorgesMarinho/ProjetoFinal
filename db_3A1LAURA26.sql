@@ -10,7 +10,7 @@ primary key(id)
 )engine = InnoDB;
 
 create table tbl_usuario(
-cpf int(11) not null,
+cpf varchar(11) not null,
 email varchar(120) not null,
 senha varchar(30) not null,
 nome varchar(80) not null,
@@ -18,4 +18,4 @@ telefone int(9) not null,
 primary key(cpf)
 )engine = InnoDB;
 
-insert into tbl_usuario value(00000000000,"usuario@gmail.com","123456","Usuário",999999999)
+insert into tbl_usuario value("00000000000","usuario@gmail.com","123456","Usuário",999999999)
